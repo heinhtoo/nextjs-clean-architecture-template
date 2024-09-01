@@ -5,7 +5,7 @@ import { getInjection } from "@/di/container";
 import { AuthenticationError } from "@/src/entities/errors/auth";
 import { Cookie } from "@/src/entities/models/cookie";
 import { Session } from "@/src/entities/models/session";
-import { User } from "@prisma/client";
+import { User } from "@/src/entities/models/user";
 
 export function signUpUseCase(input: {
   username: string;

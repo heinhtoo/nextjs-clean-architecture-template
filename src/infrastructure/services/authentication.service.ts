@@ -10,7 +10,7 @@ import { UnauthenticatedError } from "@/src/entities/errors/auth";
 import { Cookie } from "@/src/entities/models/cookie";
 import { Session, sessionSchema } from "@/src/entities/models/session";
 import { luciaAdapter } from "@/prisma";
-import { User } from "@prisma/client";
+import { User } from "@/src/entities/models/user";
 
 @injectable()
 export class AuthenticationService implements IAuthenticationService {

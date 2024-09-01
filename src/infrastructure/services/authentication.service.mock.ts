@@ -7,7 +7,7 @@ import { type IUsersRepository } from "@/src/application/repositories/users.repo
 import { Cookie } from "@/src/entities/models/cookie";
 import { DI_SYMBOLS } from "@/di/types";
 import { SESSION_COOKIE } from "@/config";
-import { User } from "@prisma/client";
+import { User } from "@/src/entities/models/user";
 
 @injectable()
 export class MockAuthenticationService implements IAuthenticationService {

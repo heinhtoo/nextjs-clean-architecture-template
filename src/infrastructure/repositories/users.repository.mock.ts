@@ -1,6 +1,6 @@
 import { IUsersRepository } from "@/src/application/repositories/users.repository.interface";
 import { hashSync } from "@node-rs/argon2";
-import { User } from "@prisma/client";
+import { User } from "@/src/entities/models/user";
 import { injectable } from "inversify";
 
 @injectable()

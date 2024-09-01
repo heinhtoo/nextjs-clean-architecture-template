@@ -3,7 +3,7 @@ import { startSpan, captureException } from "@sentry/nextjs";
 
 import { IUsersRepository } from "@/src/application/repositories/users.repository.interface";
 import { DatabaseOperationError } from "@/src/entities/errors/common";
-import { User } from "@prisma/client";
+import { User } from "@/src/entities/models/user";
 import { prismaClient } from "@/prisma";
 
 @injectable()
